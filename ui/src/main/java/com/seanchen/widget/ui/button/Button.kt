@@ -38,11 +38,6 @@ import com.seanchen.widget.ui.theme.Primary
 import com.seanchen.widget.ui.theme.TextWhite
 import com.seanchen.widget.ui.theme.ShapeSmall
 
-/**
- * Primary XinComponent action button.
- *
- * Loading disables interaction and keeps the label in the layout, preventing a width change.
- */
 @Composable
 fun AppButton(
     text: String,

@@ -141,6 +141,105 @@ if (showDeleteDialog) {
 
 对话框不会在回调后自动关闭。可见性由调用方持有，因此异步操作期间可以通过 `confirmLoading` 保持对话框并阻止重复操作。复杂内容可使用同名的插槽式 `AppDialog` API。
 
+### Loading
+
+```kotlin
+// 行内加载
+AppLoading(
+    text = "正在加载...",
+    size = LoadingSize.MEDIUM,
+    orientation = LoadingOrientation.VERTICAL
+)
+
+// 全屏轻提示模态加载弹窗
+AppLoadingDialog(
+    visible = isLoading,
+    text = "提交中，请稍候...",
+    cancellable = false
+)
+```
+
+### Empty
+
+```kotlin
+// 预设空状态（暂无数据、网络故障、加载出错、空购物车）
+AppEmpty(
+    type = EmptyType.NETWORK,
+    onActionClick = { reloadData() }
+)
+
+// 自定义空状态
+AppEmpty(
+    type = EmptyType.CUSTOM,
+    title = "暂无未读通知",
+    subtitle = "当有新的系统消息时会展示在此处",
+    actionText = "去浏览",
+    onActionClick = { navigateToHome() }
+)
+```
+
+### Badge
+
+```kotlin
+// 数字徽标（超过 99 自动显示 99+）
+AppBadge(count = unreadCount) {
+    Icon(painter = painterResource(R.drawable.ic_notification), contentDescription = null)
+}
+
+// 小红点徽标
+AppBadge(isDot = true) {
+    Text("消息中心")
+}
+
+// 独立文案徽标
+AppBadge(text = "HOT", containerColor = ColorDanger)
+```
+
+### TextField
+
+```kotlin
+AppTextField(
+    value = username,
+    onValueChange = { username = it },
+    placeholder = "请输入手机号或邮箱",
+    label = "账号",
+    clearable = true,
+    errorMessage = if (isError) "账号格式不正确" else null
+)
+
+// 密码输入框（内置眼睛切换）
+AppTextField(
+    value = password,
+    onValueChange = { password = it },
+    placeholder = "请输入登录密码",
+    isPassword = true
+)
+```
+
+### Rate
+
+```kotlin
+// 支持半星步长评分
+AppRate(
+    score = ratingScore,
+    onScoreChange = { ratingScore = it },
+    allowHalf = true
+)
+
+// 只读星级展示
+AppRate(
+    score = 4.5f,
+    onScoreChange = null
+)
+```
+
+### Tag
+
+```kotlin
+Tag(text = "新品推荐", type = TagType.PRIMARY, style = TagStyle.LIGHT)
+TagClosable(text = "可删除标签", onClose = { removeTag() })
+```
+
 ## 项目结构
 
 ```text

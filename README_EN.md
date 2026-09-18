@@ -138,6 +138,105 @@ if (showDeleteDialog) {
 
 Callbacks do not dismiss the dialog automatically. The caller owns visibility, allowing an asynchronous operation to keep the dialog open and use `confirmLoading` to prevent duplicate actions. Complex screens can use the slot-based `AppDialog` overload.
 
+### Loading
+
+```kotlin
+// Inline loading
+AppLoading(
+    text = "Loading...",
+    size = LoadingSize.MEDIUM,
+    orientation = LoadingOrientation.VERTICAL
+)
+
+// Modal loading dialog
+AppLoadingDialog(
+    visible = isLoading,
+    text = "Submitting, please wait...",
+    cancellable = false
+)
+```
+
+### Empty
+
+```kotlin
+// Preset empty state (Data, Network, Error, Cart)
+AppEmpty(
+    type = EmptyType.NETWORK,
+    onActionClick = { reloadData() }
+)
+
+// Custom empty state
+AppEmpty(
+    type = EmptyType.CUSTOM,
+    title = "No notifications",
+    subtitle = "New system messages will appear here",
+    actionText = "Explore",
+    onActionClick = { navigateToHome() }
+)
+```
+
+### Badge
+
+```kotlin
+// Count badge (auto truncated to 99+)
+AppBadge(count = unreadCount) {
+    Icon(painter = painterResource(R.drawable.ic_notification), contentDescription = null)
+}
+
+// Dot badge
+AppBadge(isDot = true) {
+    Text("Messages")
+}
+
+// Standalone text badge
+AppBadge(text = "HOT", containerColor = ColorDanger)
+```
+
+### TextField
+
+```kotlin
+AppTextField(
+    value = username,
+    onValueChange = { username = it },
+    placeholder = "Enter phone or email",
+    label = "Account",
+    clearable = true,
+    errorMessage = if (isError) "Invalid format" else null
+)
+
+// Password field with toggleable eye icon
+AppTextField(
+    value = password,
+    onValueChange = { password = it },
+    placeholder = "Enter password",
+    isPassword = true
+)
+```
+
+### Rate
+
+```kotlin
+// Rate with half-star support
+AppRate(
+    score = ratingScore,
+    onScoreChange = { ratingScore = it },
+    allowHalf = true
+)
+
+// Read-only star display
+AppRate(
+    score = 4.5f,
+    onScoreChange = null
+)
+```
+
+### Tag
+
+```kotlin
+Tag(text = "New Arrival", type = TagType.PRIMARY, style = TagStyle.LIGHT)
+TagClosable(text = "Closable Tag", onClose = { removeTag() })
+```
+
 ## Project structure
 
 ```text

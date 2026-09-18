@@ -57,7 +57,6 @@ internal val LocalAppTextColors = staticCompositionLocalOf<AppTextColors> {
  * ```
  *
  * @return 返回与当前主题匹配的AppTextColors实例
- * @author Joker.X
  */
 @Composable
 @ReadOnlyComposable

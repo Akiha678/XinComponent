@@ -39,6 +39,9 @@ import com.seanchen.widget.ui.theme.SpaceHorizontalXLarge
 import com.seanchen.widget.ui.theme.SpaceVerticalXSmall
 import com.seanchen.widget.ui.theme.TextType
 
+/**
+ * 搜索APPBar
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SearchTopAppBar(

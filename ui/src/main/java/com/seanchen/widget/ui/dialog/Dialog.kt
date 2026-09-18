@@ -27,10 +27,7 @@ import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 
 /**
- * Standard confirmation dialog.
- *
- * Callbacks deliberately do not dismiss the dialog automatically: the owner remains the single
- * source of truth for visibility and can keep the dialog open while an asynchronous action runs.
+ * 弹窗
  */
 @Composable
 fun AppDialog(
