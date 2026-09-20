@@ -18,12 +18,12 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.seanchen.widget.ui.divider.AppDivider
 import com.seanchen.widget.ui.icon.ArrowRightIcon
-import com.seanchen.widget.ui.theme.AppText
+import com.seanchen.widget.ui.text.AppText
+import com.seanchen.widget.ui.text.TextSize
+import com.seanchen.widget.ui.text.TextType
 import com.seanchen.widget.ui.theme.SpaceHorizontalMedium
 import com.seanchen.widget.ui.theme.SpaceHorizontalXSmall
 import com.seanchen.widget.ui.theme.SpaceVerticalMedium
-import com.seanchen.widget.ui.theme.TextSize
-import com.seanchen.widget.ui.theme.TextType
 
 @Composable
 fun AppListItem(

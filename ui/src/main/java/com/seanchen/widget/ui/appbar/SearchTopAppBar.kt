@@ -25,19 +25,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalFocusManager
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import com.seanchen.widget.ui.R
 import com.seanchen.widget.ui.icon.ArrowLeftIcon
 import com.seanchen.widget.ui.icon.CommonIcon
-import com.seanchen.widget.ui.theme.AppText
+import com.seanchen.widget.ui.text.AppText
+import com.seanchen.widget.ui.text.TextType
 import com.seanchen.widget.ui.theme.CenterRow
 import com.seanchen.widget.ui.theme.ShapeCircle
 import com.seanchen.widget.ui.theme.SpaceHorizontalSmall
 import com.seanchen.widget.ui.theme.SpaceHorizontalXLarge
 import com.seanchen.widget.ui.theme.SpaceVerticalXSmall
-import com.seanchen.widget.ui.theme.TextType
 
 /**
  * 搜索APPBar
