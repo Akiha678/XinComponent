@@ -7,5 +7,5 @@ plugins {
 
 allprojects {
     group = "com.seanchen.widget"
-    version = "0.1.7"
+    version = "0.1.8"
 }
