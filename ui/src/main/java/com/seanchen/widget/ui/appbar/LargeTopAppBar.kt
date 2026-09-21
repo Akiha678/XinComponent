@@ -24,7 +24,7 @@ fun LargeTopAppBar(
     titleText: String? = null,
     actions: @Composable (RowScope.() -> Unit) = {},
     onBackClick: () -> Unit = {},
-    showBackClick: Boolean = true,
+    showBackIcon: Boolean = true,
     scrollBehavior: TopAppBarScrollBehavior? = null,
     expandedBackgroundColor: Color = MaterialTheme.colorScheme.background,
     collapsedBackgroundColor: Color = MaterialTheme.colorScheme.background
@@ -53,7 +53,7 @@ fun LargeTopAppBar(
             }
         },
         navigationIcon = {
-            if (showBackClick) {
+            if (showBackIcon) {
                 IconButton(onClick = onBackClick) {
                     ArrowLeftIcon()
                 }
