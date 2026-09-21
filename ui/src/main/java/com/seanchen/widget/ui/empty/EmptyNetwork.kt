@@ -1,6 +1,5 @@
 package com.seanchen.widget.ui.empty
 
-import Empty
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.seanchen.widget.ui.R

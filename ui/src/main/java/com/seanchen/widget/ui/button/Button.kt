@@ -1,3 +1,5 @@
+package com.seanchen.widget.ui.button
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -25,10 +27,6 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.seanchen.widget.ui.button.ButtonShape
-import com.seanchen.widget.ui.button.ButtonSize
-import com.seanchen.widget.ui.button.ButtonStyle
-import com.seanchen.widget.ui.button.ButtonType
 import com.seanchen.widget.ui.theme.ColorDanger
 import com.seanchen.widget.ui.theme.ColorPurple
 import com.seanchen.widget.ui.theme.ColorSuccess

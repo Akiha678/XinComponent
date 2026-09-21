@@ -1,3 +1,5 @@
+package com.seanchen.widget.ui.empty
+
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

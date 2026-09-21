@@ -133,5 +133,4 @@ fun SearchTopAppBar(
         ),
         scrollBehavior = scrollBehavior
     )
-
 }
