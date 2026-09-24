@@ -260,3 +260,21 @@ val GradientRedEnd = Color(0xFFFF2B2B) // 红色渐变终点
  * 右箭头灰色：#A3A3A3
  */
 val RightArrowGray = Color(0xFFA3A3A3) // 右箭头灰色
+
+/**
+ * 经典头像色盘（多彩头像底色预设）
+ */
+val AvatarColors = listOf(
+    Color(0xFFE17076), // 珊瑚红
+    Color(0xFFFAA774), // 暖橙色
+    Color(0xFFA695E7), // 薰衣草紫
+    Color(0xFF7BC862), // 清爽绿
+    Color(0xFF6EC9CB), // 绿松石青
+    Color(0xFF65AADD), // 浅蔚蓝
+    Color(0xFFEE7AAE)  // 樱花粉
+)
+
+/**
+ * 在线状态指示绿色：#00C853
+ */
+val ColorOnline = Color(0xFF00C853)

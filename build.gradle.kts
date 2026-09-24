@@ -7,5 +7,5 @@ plugins {
 
 allprojects {
     group = "com.github.Akiha678.XinComponent"
-    version = "v0.1.13"
+    version = "v0.1.14"
 }
