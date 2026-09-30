@@ -109,3 +109,20 @@ fun ArrowRightIcon(
         tint = tint
     )
 }
+/**
+ * 更多图标（三点）
+ */
+@Composable
+fun MoreIcon(
+    modifier: Modifier = Modifier,
+    size: Dp? = 24.dp,
+    tint: Color = LocalContentColor.current
+) {
+    CommonIcon(
+        resId = R.drawable.ic_more,
+        contentDescription = "More",
+        modifier = modifier,
+        size = size,
+        tint = tint
+    )
+}
